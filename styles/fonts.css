@@ -1,0 +1,24 @@
+@font-face {
+    font-family: TS;
+    src: url(./Font-Family/TS\ Block\ Bold.ttf);
+}
+
+@font-face {
+    font-family: Action;
+    src: url(./Font-Family/A.Action\ Jackson.Alen_.Rus_.ttf);
+}
+
+@font-face {
+    font-family: RubikMono;
+    src: url(./Font-Family/RubikMonoOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Cyberpunk;
+    src: url(./Font-Family/Cyberpunk_RUS_BY_LYAJKA.ttf);
+}
+
+@font-face {
+    font-family: Leto;
+    src: url(./Font-Family/Leto\ Text\ Sans\ Defect.otf);
+}

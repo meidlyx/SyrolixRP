@@ -1,0 +1,446 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+img {
+    pointer-events: none; /* Запретить события на изображении */
+}
+/* HEADER */
+
+.header {
+    margin-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 40px;
+    font-family: TS;
+    color: lightpink;
+    transition: ease-in 0.5s;
+}
+.logo:hover {
+    color: red;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 25px;
+    color: lightcoral;
+    font-weight: 900;
+    margin-left: 50px;
+    transition: ease-in-out 0.5s;
+}
+.navbar a:hover {
+    color: lightblue;
+}
+
+.navbar2 a {
+    position: relative;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 50px;
+    transition: ease-in-out 0.5s;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    width: 0;
+    height: 5px;
+    background-color: lightpink;
+    border-radius: 50px;
+    transition: ease-in-out 0.5s;
+}
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.language {
+    color: lightblue;
+}
+.language:hover {
+    color: white;
+}
+
+.login {
+    background-color: #E81C5A;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    color: lightgray;
+    transition: ease-in-out 0.5s;
+}
+.login:hover {
+    color: white;
+    background-color: red;
+}
+
+/* END HEADER */
+
+
+
+/* BODY */
+
+body { 
+    margin-top: 200px;
+    font-family: Leto;
+    background-image: url(../PNG/intro.png);
+    background-color: #0e0e0e;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    width: 100%;
+    height: 1000px;
+}
+
+/* MAIN */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+}
+
+.card {
+    width: 220px;
+    height: 580px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1); 
+    transition: ease-in-out 0.5s;
+}
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
+}
+.card img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.card1 img {
+    width: 30%;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 300px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.text-mask {
+    position: absolute;
+    font-size: 25px;
+    align-items: center;
+    bottom: 20px;
+    color: white;
+    padding: 5px;
+    opacity: 0;
+    font-family: Cyberpunk;
+    transition: opacity 0.3s;
+}
+.card:hover .text-mask {
+    opacity: 1;
+}
+
+.play-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 0, 119, 0.5);
+    transition: ease-in-out 0.5s;
+}
+.play-card:hover {
+    background-color: rgba(255, 0, 119, 0.3);
+}
+
+.play-card p {
+    font-size: 25px;
+    cursor: pointer;
+    color: lightpink;
+    font-family: Cyberpunk;
+}
+
+.play-card p:hover {
+    color: white;
+}
+
+/* .text-overlay {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 200px; 
+    color: white;
+    font-family: TS; 
+    letter-spacing: 10px; 
+    opacity: 0.2; 
+    z-index: 1;
+    pointer-events: none; 
+} */
+
+.card:nth-child(1)::before {
+    content: 'S';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    color: white;
+    font-family: TS;
+    opacity: 0.2;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.card:nth-child(2)::before {
+    content: 'Y';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    color: white;
+    font-family: TS;
+    opacity: 0.2;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.card:nth-child(3)::before {
+    content: 'R';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    color: white;
+    font-family: TS;
+    opacity: 0.2;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.card:nth-child(4)::before {
+    content: 'O';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    color: white;
+    font-family: TS;
+    opacity: 0.2;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.card:nth-child(5)::before {
+    content: 'L';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    color: white;
+    font-family: TS;
+    opacity: 0.2;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.card:nth-child(6)::before {
+    content: 'I';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    color: white;
+    font-family: TS;
+    opacity: 0.2;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.card:nth-child(7)::before {
+    content: 'X';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    color: white;
+    font-family: TS;
+    opacity: 0.2;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.motivation-text {
+    font-size: 70px;
+    font-family: Cyberpunk;
+    margin-top: 100px;
+    text-align: center;
+    color: lightpink;
+    margin-bottom: 220px
+}
+
+.info-main {
+    background-color: #0e0e0e;
+    padding-top: 100px;
+}
+.palms {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+.info-man-text {
+    position: absolute;
+    top: 1350px;
+    left: 125px;
+    display: flex;
+    justify-content: space-around;
+}
+.info-text-main {
+    font-size: 18px;
+    margin-top: 100px;
+    width: 800px;
+}
+.info-text-main b {
+    color: red;
+    font-size: 24px;
+}
+.info-text {
+    font-size: 25px;
+}
+.try-info {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 50px;
+}
+.try-button {
+    display: flex;
+    justify-content: space-between;
+}
+.gangster-try, .cops-try {
+    margin-top: 25px;
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    font-size: 18px;
+}
+.gangster-try:hover, .cops-try:hover {
+    background-color: #E81C5A;
+}
+
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.buy-gtav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #131313;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 115px;
+}
+.button-buy {
+    margin-left: 100px;
+    background-color: #E81C5A;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
+.button-buy:hover {
+    background-color: #4f1929;
+    color: #E81C5A;
+    font-weight: 900;
+}
+
+
+.img-social-links {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+}
+.tut-social-links {
+    margin: 5px;
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+    cursor: pointer;
+}
+
+.tut-social-links:hover {
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+
+/* END MAIN */
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: row;
+    margin: 100px;
+}
+.footer-info a {
+    margin-top: 3%;
+}
+.info-footer {
+    margin-left: 200px;
+}
+/* END FOOTER */
+
+/* END BODY */
